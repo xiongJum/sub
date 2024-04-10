@@ -349,7 +349,10 @@
         "outbound": "select"
       },
       {
-        "domain": "accounts.google.com",
+        "domain": [
+           "accounts.google.com",
+           "cdn.winget.microsoft.com",
+        ]
         "domain_suffix": [
           "sourceforge.net",
           "fhjasokiwq.com"
