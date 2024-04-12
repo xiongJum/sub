@@ -352,7 +352,7 @@
         "domain": [
            "accounts.google.com",
            "cdn.winget.microsoft.com"
-        ]
+        ],
         "domain_suffix": [
           "sourceforge.net",
           "fhjasokiwq.com"
