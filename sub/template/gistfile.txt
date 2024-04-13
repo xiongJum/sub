@@ -330,7 +330,8 @@
       {
         "process_name": [
           "DropboxMacUpdate",
-          "Dropbox"
+          "Dropbox",
+          "ssh.exe"
         ],
         "outbound": "select"
       },
