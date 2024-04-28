@@ -363,7 +363,15 @@
         "outbound": "select"
       },
       {
-        "domain_suffix": "cloud.sealos.io",
+        "domain_suffix": [
+						"cloud.sealos.io",
+						"bing.com",
+						"1210923.xyz",
+						// tmdb 域名
+						"tmdb.org",
+						"themoviedb.org"
+						
+				]
         "outbound": "direct"
       },
       {
