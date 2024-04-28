@@ -363,9 +363,13 @@
         "outbound": "select"
       },
       {
+				"domian": [
+					"ux-plus-bing.xiaoice.com"
+				],
         "domain_suffix": [
 					"cloud.sealos.io",
 					"bing.com",
+					"bing.net",
 					"1210923.xyz",
 					"tmdb.org",
 					"themoviedb.org",
