@@ -367,9 +367,9 @@
 						"cloud.sealos.io",
 						"bing.com",
 						"1210923.xyz",
-						// tmdb 域名
 						"tmdb.org",
-						"themoviedb.org"
+						"themoviedb.org",
+						"cloudflare.com"
 						
 				]
         "outbound": "direct"
