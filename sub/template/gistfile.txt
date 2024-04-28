@@ -363,7 +363,7 @@
         "outbound": "select"
       },
       {
-				"domian": [
+				"domain": [
 					"ux-plus-bing.xiaoice.com"
 				],
         "domain_suffix": [
