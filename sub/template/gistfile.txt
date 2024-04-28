@@ -370,8 +370,7 @@
 						"tmdb.org",
 						"themoviedb.org",
 						"cloudflare.com"
-						
-				]
+				],
         "outbound": "direct"
       },
       {
