@@ -354,7 +354,13 @@
         "domain": [
            "accounts.google.com",
            "cdn.winget.microsoft.com",
-           "192.210.142.60"
+           "192.210.142.60",
+					 "nyaa.si",
+					 "acg.rip",
+					 "bangumi.moe",
+					 "share.acgnx.se",
+					 "www.acgnx.se",
+					 "share.dmhy.org"
         ],
         "domain_suffix": [
           "sourceforge.net",
