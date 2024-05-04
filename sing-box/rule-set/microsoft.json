@@ -1,0 +1,27 @@
+{
+    "rules": [
+        {
+            "domain": [
+                "ux-plus-bing.xiaoice.com",
+                "cdn.winget.microsoft.com",
+                "hiung-my.sharepoint.com",
+                "oneocsp.microsoft.com",
+                "skydrive.wns.windows.com"
+            ]
+        },
+        {
+            "domain_suffix": [
+                "bing.com",
+                "bing.net"
+            ]
+        },
+        {
+            "process_name": [
+                "OneDrive.exe",
+                "WinStore.App.exe",
+                "WindowsPackageManagerServer.exe"
+            ]
+        }
+    ],
+    "version": 1
+}

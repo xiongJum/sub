@@ -1,0 +1,16 @@
+{
+    "rules": [
+        {
+            "domain": [
+                "nyaa.si",
+                "acg.rip",
+                "bangumi.moe",
+                "static.bangumi.moe",
+                "share.acgnx.se",
+                "www.acgnx.se",
+                "share.dmhy.org"
+            ]
+        }
+    ],
+    "version": 1
+}
