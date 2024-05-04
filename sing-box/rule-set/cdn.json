@@ -1,0 +1,17 @@
+{
+    "rules": [
+        {
+            "domain": [
+                "cdn.cookielaw.org",
+                "cdn.jsdelivr.us",
+                "static.cloudflareinsights.com"
+            ]
+        },
+        {
+            "domain_suffix": [
+                "cloudflare.com"
+            ]
+        }
+    ],
+    "version": 1
+}
