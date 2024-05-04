@@ -8,12 +8,6 @@
         "detour": "direct"
       },
       {
-        "tag": "dns_google",
-        "address": "udp://8.8.8.8",
-        "strategy": "ipv4_only",
-        "detour": "direct"
-      },
-      {
         "tag": "dns_microsoft",
         "address": "udp://4.2.2.1",
         "strategy": "ipv4_only",
@@ -51,16 +45,7 @@
         "server": "dns_proxy"
       },
       {
-        "domain": [
-          "ux-plus-bing.xiaoice.com"
-        ],
-        "server": "dns_microsoft"
-      },
-      {
-        "domain_suffix": [
-          "bing.com",
-          "bing.net"
-        ],
+        "rule_set": "microsoft",
         "server": "dns_microsoft"
       },
       {
@@ -71,38 +56,25 @@
       },
       {
         "rule_set": [
+          "cdn",
+          "site-direct",
           "geoip-cn",
           "WeChat"
         ],
         "server": "dns_direct"
       },
       {
-        "rule_set": [
-          "geosite-google",
-          "YouTube"
-        ],
-        "server": "dns_proxy"
-      },
-      {
         "domain": [
-          "cdn.jsdelivr.us",
-          "sourceforge.net",
-          "192.210.142.60",
-          "nyaa.si",
-          "acg.rip",
-          "bangumi.moe",
-          "static.bangumi.moe",
-          "share.acgnx.se",
-          "www.acgnx.se",
-          "share.dmhy.org",
-          "sourceforge.net",
-          "push.services.mozilla.com",
-          "detectportal.firefox.com"
+          "192.210.142.60"
         ],
         "server": "dns_proxy"
       },
       {
         "rule_set": [
+          "seed",
+          "geosite-github",
+          "geosite-google",
+          "YouTube",
           "geosite-google@cn",
           "Telegram",
           "geosite-gfw",
@@ -293,31 +265,17 @@
         "outbound": "direct"
       },
       {
-        "domain_suffix": [
-          "icloudnative.io",
-          "fuckcloudnative.io",
-          "sealos.io",
-          "cdn.jsdelivr.us",
-          "cloudflare.com",
-          "cdn.winget.microsoft.com",
-          "bing.com",
-          "bing.net",
-          "1210923.xyz",
-          "tmdb.org",
-          "themoviedb.org",
-          "cloudflare.com",
-          "sing-box.sagernet.org"
-        ],
-        "outbound": "direct"
-      },
-      {
         "process_name": [
+          "qbittorrent.exe",
           "WeChat"
         ],
         "outbound": "direct"
       },
       {
         "rule_set": [
+          "microsoft",
+          "cdn",
+          "site-direct",
           "WeChat",
           "geosite-google@cn",
           "geoip-cn"
@@ -336,34 +294,18 @@
         "outbound": "proxy"
       },
       {
-        "type": "logical",
-        "mode": "and",
-        "rules": [
-          {
-            "process_name": "ssh.exe"
-          },
-          {
-            "domain": "192.210.142.60"
-          }
-        ],
-        "outbound": "proxy"
+        "process_name": "ssh.exe"
       },
       {
         "domain": [
-          "192.210.142.60",
-          "nyaa.si",
-          "acg.rip",
-          "bangumi.moe",
-          "static.bangumi.moe",
-          "share.acgnx.se",
-          "www.acgnx.se",
-          "share.dmhy.org",
-          "sourceforge.net"
+          "192.210.142.60"
         ],
         "outbound": "proxy"
       },
       {
         "rule_set": [
+          "seed",
+          "geosite-github",
           "Telegram",
           "geosite-gfw",
           "Global"
@@ -372,6 +314,34 @@
       }
     ],
     "rule_set": [
+      {
+        "type": "remote",
+        "tag": "microsoft",
+        "format": "source",
+        "url": "http://txt.1210923.xyz/sing-box/rule-set/microsoft.json",
+        "download_detour": "direct"
+      },
+      {
+        "type": "remote",
+        "tag": "seed",
+        "format": "source",
+        "url": "http://txt.1210923.xyz/sing-box/rule-set/seed.json",
+        "download_detour": "direct"
+      },
+      {
+        "type": "remote",
+        "tag": "cdn",
+        "format": "source",
+        "url": "http://txt.1210923.xyz/sing-box/rule-set/cdn.json",
+        "download_detour": "direct"
+      },
+      {
+        "type": "remote",
+        "tag": "site-direct",
+        "format": "source",
+        "url": "http://txt.1210923.xyz/sing-box/rule-set/site-direct.json",
+        "download_detour": "direct"
+      },
       {
         "type": "remote",
         "tag": "geosite-gfw",
@@ -383,14 +353,14 @@
         "type": "remote",
         "tag": "geoip-cn",
         "format": "binary",
-        "url": "https://mirror.ghproxy.com/https://github.com/CHIZI-0618/v2ray-rules-dat/release/singbox_ip_rule_set/geoip-cn.srs",
+        "url": "https://mirror.ghproxy.com/https://github.com/CHIZI-0618/v2ray-rules-dat/blob/release/singbox_ip_rule_set/geoip-cn.srs",
         "download_detour": "direct"
       },
       {
         "type": "remote",
         "tag": "geosite-google@cn",
         "format": "binary",
-        "url": "https://mirror.ghproxy.com/https://github.com/CHIZI-0618/v2ray-rules-dat/release/singbox_ip_rule_set/geosite-google@cn.srs",
+        "url": "https://mirror.ghproxy.com/https://github.com/CHIZI-0618/v2ray-rules-dat/blob/release/singbox_ip_rule_set/geosite-google@cn.srs",
         "download_detour": "direct"
       },
       {
@@ -398,6 +368,13 @@
         "tag": "geosite-google",
         "format": "binary",
         "url": "https://mirror.ghproxy.com/https://github.com/SagerNet/sing-geosite/blob/rule-set/geosite-google.srs",
+        "download_detour": "direct"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-github",
+        "format": "binary",
+        "url": "https://mirror.ghproxy.com/https://github.com/SagerNet/sing-geosite/blob/rule-set/geosite-github.srs",
         "download_detour": "direct"
       },
       {
