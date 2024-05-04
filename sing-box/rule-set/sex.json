@@ -1,0 +1,11 @@
+{
+    "rules": [
+        {
+            "domain": [
+                "missav.com",
+                "hanime1.me"
+            ]
+        }
+    ],
+    "version": 1
+}

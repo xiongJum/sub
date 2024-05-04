@@ -3,17 +3,16 @@
     "servers": [
       {
         "tag": "dns_proxy",
-        "address": "udp://1.1.1.1",
-        "address_resolver": "dns_resolver",
+        "address": "https://1.1.1.1/dns-query",
         "strategy": "ipv4_only",
-        "detour": "direct"
+        "detour": "proxy"
       },
       {
         "tag": "dns_google",
-        "address": "udp://8.8.4.4",
+        "address": "tls://dns.google",
         "address_resolver": "dns_resolver",
         "strategy": "ipv4_only",
-        "detour": "direct"
+        "detour": "proxy"
       },
       {
         "tag": "dns_microsoft",
@@ -82,6 +81,7 @@
       },
       {
         "rule_set": [
+          "sex",
           "geosite-google",
           "YouTube",
           "geosite-google@cn"
@@ -322,6 +322,7 @@
         "rule_set": [
           "seed",
           "geosite-github",
+          "sex",
           "Telegram",
           "geosite-gfw",
           "Global"
@@ -356,6 +357,13 @@
         "tag": "site-direct",
         "format": "source",
         "url": "http://txt.1210923.xyz/sing-box/rule-set/site-direct.json",
+        "download_detour": "direct"
+      },
+      {
+        "type": "remote",
+        "tag": "sex",
+        "format": "source",
+        "url": "http://txt.1210923.xyz/sing-box/rule-set/sex.json",
         "download_detour": "direct"
       },
       {
