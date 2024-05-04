@@ -294,7 +294,8 @@
         "outbound": "proxy"
       },
       {
-        "process_name": "ssh.exe"
+        "process_name": "ssh.exe",
+        "outbound": "proxy"
       },
       {
         "domain": [
