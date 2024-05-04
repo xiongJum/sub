@@ -4,6 +4,14 @@
       {
         "tag": "dns_proxy",
         "address": "udp://1.1.1.1",
+        "address_resolver": "dns_resolver",
+        "strategy": "ipv4_only",
+        "detour": "direct"
+      },
+      {
+        "tag": "dns_google",
+        "address": "udp://8.8.4.4",
+        "address_resolver": "dns_resolver",
         "strategy": "ipv4_only",
         "detour": "direct"
       },
@@ -45,7 +53,10 @@
         "server": "dns_proxy"
       },
       {
-        "rule_set": "microsoft",
+        "rule_set": [
+          "microsoft",
+          "geosite-github"
+        ],
         "server": "dns_microsoft"
       },
       {
@@ -71,11 +82,15 @@
       },
       {
         "rule_set": [
-          "seed",
-          "geosite-github",
           "geosite-google",
           "YouTube",
-          "geosite-google@cn",
+          "geosite-google@cn"
+        ],
+        "server": "dns_google"
+      },
+      {
+        "rule_set": [
+          "seed",
           "Telegram",
           "geosite-gfw",
           "Global"
