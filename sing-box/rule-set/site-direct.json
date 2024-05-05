@@ -1,12 +1,6 @@
 {
     "rules": [
         {
-            "domain": [
-                "ocsp.digicert.com",
-								"mirrors.kodi.tv"
-            ]
-        },
-        {
             "domain":[
                 "sync-1-us-west1-g.sync.services.mozilla.com",
                 "incoming.telemetry.mozilla.org",
@@ -14,23 +8,15 @@
                 "firefox-settings-attachments.cdn.mozilla.net",
                 "profile.accounts.firefox.com",
                 "detectportal.firefox.com",
-                "x1.c.lencr.org"
-            ]
-        },
-        {
+                "x1.c.lencr.org",
+                "ocsp.digicert.com",
+								"mirrors.kodi.tv"
+            ],
             "domain_suffix": [
                 "1210923.xyz",
-                "sing-box.sagernet.org"
-            ]
-        },
-        {
-            "domain_suffix":[
+                "sing-box.sagernet.org",
                 "mozilla.com",
-                "mozilla.net"
-            ]
-        },
-        {
-            "domain_suffix": [
+                "mozilla.net",
                 "tmdb.org",
                 "themoviedb.org",
                 "cloudflare.com"   
