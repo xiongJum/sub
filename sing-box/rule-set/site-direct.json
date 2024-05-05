@@ -2,7 +2,8 @@
     "rules": [
         {
             "domain": [
-                "ocsp.digicert.com"
+                "ocsp.digicert.com",
+								"mirrors.kodi.tv"
             ]
         },
         {
