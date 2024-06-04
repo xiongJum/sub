@@ -5,6 +5,7 @@
         "tag": "dns_proxy",
         "address": "https://dns.google/dns-query",
         "strategy": "ipv4_only",
+        "address_resolver": "dns_resolver",
         "detour": "proxy"
       },
       {
